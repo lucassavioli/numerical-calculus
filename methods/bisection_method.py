@@ -5,6 +5,24 @@ of a continuous function within a given interval.
 
 
 def bisection_method(func, a, b, tol, max_iterations):
+    """
+    Performs the bisection method to find the root of a given function within a specified interval.
+
+    Parameters:
+    - func (function): The function for which the root is to be found.
+    - a (float): The left endpoint of the interval.
+    - b (float): The right endpoint of the interval.
+    - tol (float): The tolerance level for the root approximation.
+    - max_iterations (int): The maximum number of iterations to perform.
+
+    Returns:
+    - root (float): The approximate root of the function within the specified interval.
+    - iterations (int): The number of iterations performed to find the root.
+
+    Raises:
+    - ValueError: If the function does not have different signs at the endpoints of the interval.
+
+    """
     if func(a) * func(b) >= 0:
         raise ValueError("The function must have different signs at endpoints a and b.")
 
