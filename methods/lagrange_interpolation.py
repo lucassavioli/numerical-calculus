@@ -19,6 +19,7 @@ def lagrange_interpolation(x, y, point):
 
     return result
 
+
 # Usage example
 if __name__ == "__main__":
     # Sample data points
