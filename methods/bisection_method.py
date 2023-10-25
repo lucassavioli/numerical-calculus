@@ -1,9 +1,3 @@
-"""
-The bisection method is a simple numerical technique for finding the root 
-of a continuous function within a given interval.
-"""
-
-
 def bisection_method(func, a, b, tol, max_iterations):
     """
     Performs the bisection method to find the root of a given function within a specified interval.
